@@ -1,11 +1,2 @@
-Three Techniques - What and Why
-
-Classic Merge Sort – Split, sort and merge recursively. O(n log n) time complexity, stable, well-understood algorithm. Standard library routine and the first step in external sorting.
+Merge Sort – Split, sort and merge recursively. O(n log n) time complexity, stable, well-understood algorithm. Standard library routine and the first step in external sorting.
 2-way Natural Merge - Identifies sorted sequences and only merges consecutive sequences. Adaptive to partially sorted sequences; performs better when input is nearly sorted (logs, time series).
-k-way Merge Sort - Breaks sequence into k partitions and sorts each. Uses min-heap of size k for merging. Requires O(k) additional memory; suitable for external sorting (more data than RAM available).
-Operating System/Computer Application
-
-Efficient caching - Sequential merging utilizes spatial locality and results in lower paging costs.
-External sorting - k-way mergesort processes chunks stored on disk and uses small heap for merging; results in fewer disk accesses.
-Analogy to scheduling - Heap extracts minimal item just as OS chooses next process.
-All three algorithms use the linear-time merge procedure; indispensable in database queries, file systems and parallel programming.
